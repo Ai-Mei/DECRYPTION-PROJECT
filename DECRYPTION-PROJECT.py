@@ -38,6 +38,8 @@ for letter in user_input:
         cipher_text += key_values[index]
 
 # Print the decrypted message.
+print("The message you inputted: " , user_input)
 print("The decrypted message: " , cipher_text)
+
 
 
