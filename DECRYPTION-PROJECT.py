@@ -27,6 +27,17 @@ key_values [10] = "a"
 key_values [11] = "o"
 
 # Ask user for input message to decrypt.
-# Print the decryptyed message.
+user_input = input("Please type in a message to decrypt: ")
+
+# Initialize the cipher text.
+cipher_text = ""
+
+# Check every character of the input message.
+for letter in user_input:
+        index = key.index(letter)
+        cipher_text += key_values[index]
+
+# Print the decrypted message.
+print("The decrypted message: " , cipher_text)
 
 
